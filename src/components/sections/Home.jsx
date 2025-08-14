@@ -1,4 +1,5 @@
 import React from 'react'
+import RevalOnScroll from '../RevalOnScroll'
 
 const Home = () => {
   return (
@@ -6,11 +7,12 @@ const Home = () => {
     id='home'
     className='min-h-screen flex items-center justify-center relative'
     >
+        <RevalOnScroll>
         <div className='text-center z-10 px-4'>
             <h1 className='text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-cyan-400  bg-clip-text text-transparent leading-right'>Hi, I'm Sagar Susleen</h1>
             
             <p className='text-gray-400 text-lg mb-8 max-w-lg mx-auto '>
-                Aspiring DevOps Engineer with a strong foundation in Python, containerization (Docker), and full-stack
+                Aspiring DevOps ♾️ Engineer with a strong foundation in Python, containerization (Docker), and full-stack
                 development. Experienced in building and deploying RESTful applications, managing databases, and collaborating
                 via version control. Actively learning cloud infrastructure and CI/CD practices to automate software delivery and
                 enhance reliability
@@ -35,7 +37,7 @@ const Home = () => {
         </div>
 
         
-
+</RevalOnScroll>
     </section>
 
   )
