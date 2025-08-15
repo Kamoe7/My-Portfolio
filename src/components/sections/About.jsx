@@ -4,6 +4,7 @@ import RevalOnScroll from '../RevalOnScroll';
 const About = () => {
     const frontendSkills = ['React','TailwindCSS','HTML','Flutter','TypeScripts'];
     const backendSkills = ['Python','Mongodb','MySQL','Dart'];
+    const DevOpsSKills = ['Docker','Jenkins','Terraform','Kubernetes']
 
 
 
@@ -17,8 +18,10 @@ const About = () => {
             <div className=' rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all 
                 '>
                 <p className='text-gray-300 mb-6 '>
-                    Passionate developer with expertise in building scalable web
-                    applications and creating innovative solutions.
+                    Aspiring DevOps ♾️ Engineer with a strong foundation in Python, containerization (Docker), and full-stack
+                development. Experienced in building and deploying RESTful applications, managing databases, and collaborating
+                via version control. Actively learning cloud infrastructure and CI/CD practices to automate software delivery and
+                enhance reliability
                 </p>
 
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
@@ -52,8 +55,22 @@ const About = () => {
                     </div>
 
                     </div>
+
+                    <div className='rounded-xl p-6 hover:translate-y-1 transition-all'>
+                        <h3 className='text-xl font-bold mb-4'>DevOps Skills</h3>
+                        <div className='flex flex-wrap gap-2'>
+                            {DevOpsSKills.map((tech,key)=>(
+                                <span className='bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm  
+                                hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)]'>{tech}</span>
+                            ))}
+
+                        </div>
+
+                    </div>
                 </div>
             </div>
+
+
 
             <div className='grid grid-cols-1 md:grid-cols-2 gap-6 mt-8'>
                 <div className='p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-all'>
