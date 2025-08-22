@@ -1,4 +1,6 @@
 import { useEffect } from "react";
+import Github from "../assets/hub.png";
+
 
 export const Navbar = ( {menuOpen,setMenuOpen}) =>{
 
@@ -13,7 +15,7 @@ export const Navbar = ( {menuOpen,setMenuOpen}) =>{
                 <div className="flex justify-between items-center h-16">
                     <a href="#home" className="font-mono text-xl font-bold text-white">
                         {" "}
-                        Sagar<span className="text-blue-500">.Susleen</span>{" "}
+                        Sagar<span className="bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">.Susleen</span>{" "}
                     </a>
 
                     <div className="w-10 h-5 relative cursor-pointer z-40 md:hidden"
@@ -36,6 +38,12 @@ export const Navbar = ( {menuOpen,setMenuOpen}) =>{
                         <a href="#projects" className="text-gray-300 hover:text-white transition-colors">Projects</a>
 
                         <a href="#contact" className="text-gray-300 hover:text-white transition-colors">Contact</a>
+
+                        <a href="https://github.com/Kamoe7">
+                                <img src={Github} alt="github" className="h-5 w-5"/>
+                        </a>
+                         
+                        
                 </div>
 
                 </div>
